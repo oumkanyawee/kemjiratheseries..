@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายชื่อนักแสดงหลัก</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* สไตล์เพิ่มเติมสำหรับหน้านักแสดง */
+        .cast-grid {
+            display: flex;
+            flex-wrap: wrap; /* เพิ่ม flex-wrap: wrap; ตรงนี้เพื่อให้รูปภาพขึ้นบรรทัดใหม่ได้ */
+            justify-content: center;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .cast-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 220px;
+            text-align: center;
+            padding-bottom: 15px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .cast-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .cast-item img {
+            width: 100%;
+            height: 250px; /* กำหนดความสูงคงที่สำหรับรูปนักแสดง */
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cast-item h3 {
+            margin: 15px 0 5px;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .cast-item p {
+            font-size: 0.9em;
+            color: #666;
+            padding: 0 15px;
+        }
+        @media (max-width: 768px) {
+            .cast-item {
+                width: 150px;
+            }
+            .cast-item img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <nav class="nav-menu" id="myNavMenu">
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="series_history.html">ประวัติซีรีส์</a></li>
+            <li><a href="cast_list.html">รายชื่อนักแสดงหลัก</a></li>
+            <li><a href="main_pages.html">เพจหลัก</a></li>
+        </ul>
+    </nav>
+
+    <div class="center-content">
+        <h1>รายชื่อนักแสดงหลัก</h1>
+        <p>นักแสดงนำและบทบาทสำคัญในซีรีส์ "เขมจิราต้องรอด"</p>
+        <div class="cast-grid"> 
+    <div class="cast-item">
+        <img src="m1.jpeg" alt="นักแสดง น้ำปิง">
+        <h3>น้ำปิง นภัสกร ปิงเมือง</h3>
+        <p>รับบทเป็น <strong>เขมจิรา</strong></p>
+    </div>
+
+    <div class="cast-item">
+        <img src="m2.jpeg" alt="นักแสดง เก่ง">
+        <h3>เก่ง หฤษฎ์ บัวย้อย</h3>
+        <p>รับบทเป็น <strong>พ่อครูภรัณ</strong></p>
+    </div>
+
+    <div class="cast-item">
+        <img src="m3.jpeg" alt="นักแสดง เฟิร์สวัน">
+        <h3>เฟิร์สวัน วรรณกร เรืองรัตน์</h3>
+        <p>รับบทเป็น <strong>เจตนา</strong></p>
+    </div>
+
+    <div class="cast-item">
+        <img src="m4.jpeg" alt="นักแสดง เติ้ล">
+        <h3>เติ้ล มติมันต์ ศรีบุญเรือง</h3>
+        <p>รับบทเป็น <strong>ชาญวิทย์</strong></p>
+    </div>
+
+    <div class="cast-item">
+        <img src="m5.jpeg" alt="นักแสดง กรีน">
+        <h3>กรีน อัษฎาพร สิริวัฒน์ธนกุล</h3>
+        <p>รับบทเป็น <strong>ผีรำพึง</strong></p>
+    </div>
+
+    <div class="cast-item">
+        <img src="m6.jpeg" alt="นักแสดง เจนิส">
+        <h3>เจนิส เจณิสตา พรหมผดุงชีพ</h3>
+        <p>รับบทเป็น <strong>เขมมิกา</strong></p>
+    </div> 
+
+    <div class="cast-item">
+        <img src="m7.jpeg" alt="เจ้าด่าง หมาพ่อครูภรัณ">
+        <h3>เจ้าด่าง</h3>
+        <p>รับบทเป็น <strong>หมาของพ่อครูภรัณ</strong></p>
+    </div>
+
+            </div> <!-- ปิด cast-grid ให้ถูกต้อง -->
+
+        <!-- ปุ่มเลื่อนไปหน้าก่อนหน้า / ถัดไป -->
+        <div class="pagination-buttons">
+            <a href="series_history.html">หน้าก่อนหน้า</a>
+            <a href="main_pages.html">หน้าถัดไป</a>
+        </div>
+    </div> <!-- ปิด center-content -->
+
+    <script>
+        function toggleNav() {
+            var navMenu = document.getElementById("myNavMenu");
+            navMenu.classList.toggle("open");
+        }
+    </script>
+</body>
+</html>

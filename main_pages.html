@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เพจหลัก เขมจิราต้องรอด</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <nav class="nav-menu" id="myNavMenu">
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="series_history.html">ประวัติซีรีส์</a></li>
+            <li><a href="cast_list.html">รายชื่อนักแสดงหลัก</a></li>
+            <li><a href="main_pages.html">เพจหลัก</a></li>
+        </ul>
+    </nav>
+
+    <div class="center-content">
+        <h1>เพจหลัก "เขมจิราต้องรอด"</h1>
+        <p>ติดตามความเคลื่อนไหวและอัปเดตต่างๆ ของซีรีส์ได้ที่ช่องทางโซเชียลมีเดียหลัก</p>
+        
+        <div class="social-media-links">
+            <a href="https://www.instagram.com/domunditv/" target="_blank" class="social-media-link-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Instagram">
+                Instagram (domunditv)
+            </a>
+
+            <a href="https://x.com/KhemjiraSeries" target="_blank" class="social-media-link-item">
+                <img src="m9.jpeg" alt="X (Twitter)">
+                X (Official Series)
+            </a>
+
+            <a href="http://www.youtube.com/@MandeeWork" target="_blank" class="social-media-link-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1200px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube">
+                YouTube (Mandee Channel)
+            </a>
+
+            <a href="https://www.tiktok.com/@mandeework" target="_blank" class="social-media-link-item">
+                <img src="m8.jpeg" alt="TikTok">
+                TikTok (MandeeWork)
+            </a>
+        </div>
+
+        <div class="pagination-buttons">
+            <a href="cast_list.html">หน้าก่อนหน้า</a>
+            <a href="index.html">หน้าถัดไป</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleNav() {
+            var navMenu = document.getElementById("myNavMenu");
+            navMenu.classList.toggle("open");
+        }
+    </script>
+</body>
+</html>

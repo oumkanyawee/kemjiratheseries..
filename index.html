@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ซีรีส์ เขมจิราต้องรอด</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <nav class="nav-menu" id="myNavMenu">
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="series_history.html">ประวัติซีรีส์</a></li>
+            <li><a href="cast_list.html">รายชื่อนักแสดงหลัก</a></li>
+            <li><a href="main_pages.html">เพจหลัก</a></li>
+        </ul>
+    </nav>
+
+    <div class="center-content">
+        <h1>ซีรีส์ เขมจิราต้องรอด</h1>
+        <p>เปิดโปงความจริงที่ถูกซ่อน และร่วมลุ้นไปกับการเอาชีวิตรอดของเขมจิรา</p>
+    </div>
+
+    <div class="pagination-buttons">
+        <a href="main_pages.html">หน้าก่อนหน้า</a>
+        <a href="series_history.html">หน้าถัดไป</a>
+    </div>
+
+    <div style="text-align: center; padding: 30px; font-size: 1.5em; color: rgba(7, 7, 8, 0.893); background-color: rgba(119, 82, 231, 0.724);">
+        664281054 <span style="color: #0e0309ec;">กัญญาวีร์ พูลบางยุง</span>66/50
+    </div>
+
+    <script>
+        function toggleNav() {
+            var navMenu = document.getElementById("myNavMenu");
+            navMenu.classList.toggle("open");
+        }
+    </script>
+</body>
+</html>
+
+
+
